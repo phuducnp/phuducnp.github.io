@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Profile</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="myprofile.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+</head>
+<body>
+  <main role="main">
+
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">Helloo!</h1>
+        <p class="lead text-muted">I'm Duc, Developer live in Da Nang, Viet Nam 🇻🇳</p>
+        <p>
+          <a href="#" class="btn btn-primary" id="clickme">I love you</a>
+          <!-- <a href="#" class="btn btn-secondary my-2">Secondary action</a> -->
+        </p>
+      </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center my-auto">
+                  <a href="https://www.facebook.com/PhuDucNP" target="blank" class="mx-auto" style="font-size: 8rem;"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="https://www.instagram.com/phuducnp/" target="blank" class="mx-auto" style="font-size: 8rem;"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="https://github.com/phuducnp" target="blank" class="mx-auto" style="font-size: 8rem;"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="text-muted">
+    <div class="container">
+      <p style="margin-bottom: 0px;">Make with ❤ in Da Nang, Viet Nam</p>
+      <p>Proudly hosted on GitHub page</p>
+    </div>
+  </footer>
+  <script>
+    let btn = document.getElementById('clickme');
+
+    btn.addEventListener('click', function() {
+      Swal.fire({
+        type: 'success',
+        title: 'I love you, too ❤',
+        // text: 'That thing is still around?'
+        showConfirmButton: false,
+        timer: 1800
+      });
+    });
+  </script>
+</body>
+</html>
